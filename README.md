@@ -126,6 +126,12 @@ The results indicate that **classification models**, particularly the **Random F
     - `Aurelie`
     - `Ceci`
 
+- **slides**
+  - Includes presentation PDF  
+
+- **stills**
+  - Includes decision tree figure
+
 #### Folder Structure for "Tung"
 
 - **jupyter notebooks**
