@@ -125,13 +125,23 @@ The results indicate that **classification models**, particularly the **Random F
     - `Tung`
     - `Aurelie`
     - `Ceci`
+  - **ml_cleaning_af**:  
+    - **Eliminate Null Values**: Swiftly remove missing data to enhance dataset integrity and analytical precision.  
+    - **Assess Unique Values**: Investigate distinct entries to gain insights and ensure data consistency.  
+    - **Refine Column Labels**: Standardize and clarify labeling for seamless data manipulation and improved readability.
 
-#### Folder Structure for "Tung"
+- **slides**
+  - Includes presentation PDF  
+
+- **stills**
+  - Includes decision tree figure
+
+#### Folder Structure for "Aurelie"
 
 - **jupyter notebooks**
-  - `KNN_notebook`: Rough and unfiltered KNN calculation for a first feel, achieving ~45% accuracy. Created a numerical dataframe and replaced target "credit_score" with numerical values.
-  - `decision_tree_notebook`: Limited the dataset to a random 1000 `client_ids` to improve performance. Normalized the train/test set and used `DecisionTreeRegressor` along with `graphviz` to visualize the tree.
-  - `decision_boundary_notebook`: Applied `StandardScaler` and `RandomForestClassifier` to the dataset. Used a scatterplot to visualize the decision boundary.
+  - `loan_and_clean`: First exploration of the dataset, including data cleaning and initial analysis.  
+  - `ml_supervised`: Testing supervised machine learning models on the dataset.  
+  - `Hyperparameter_random_forest`: Fine-tuning the Random Forest model through hyperparameter optimization.
 
 #### Folder Structure for "Ceci"
 
@@ -148,6 +158,13 @@ The results indicate that **classification models**, particularly the **Random F
   - `KNN_feature_implementation`: Feature implementation, hyperparameter testing, model fine-tuning, and final tests  
   - `linear_regression`: Attempted linear regression model  
   - `full_KNN_implementation_simplified`: Simplified implementation of KNN with functions for hyperparameter tuning and confusion matrix output, for both 70% train/30% test and 80% train/20% test splits
+
+#### Folder Structure for "Tung"
+
+- **jupyter notebooks**
+  - `KNN_notebook`: Rough and unfiltered KNN calculation for a first feel, achieving ~45% accuracy. Created a numerical dataframe and replaced target "credit_score" with numerical values.
+  - `decision_tree_notebook`: Limited the dataset to a random 1000 `client_ids` to improve performance. Normalized the train/test set and used `DecisionTreeRegressor` along with `graphviz` to visualize the tree.
+  - `decision_boundary_notebook`: Applied `StandardScaler` and `RandomForestClassifier` to the dataset. Used a scatterplot to visualize the decision boundary.
 
 ### Reference
 
