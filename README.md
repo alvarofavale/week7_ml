@@ -168,4 +168,7 @@ The results indicate that **classification models**, particularly the **Random F
 
 ### Reference
 
-Dataset source: [Statso Credit Score Classification Case Study](https://statso.io/credit-score-classification-case-study/)
+- Dataset source: [Statso Credit Score Classification Case Study](https://statso.io/credit-score-classification-case-study/)
+- **Organization resources**:
+  - **Kanban Board**: [Kanban Board for ML Project](https://trello.com/b/md5dLfY4/kanban-template-machine-learning-project)
+  - **Presentation**: [Project Presentation](https://www.canva.com/design/DAGYKLZWHtE/fMu7Man2KpF1MNT8d74UFg/view?utm_content=DAGYKLZWHtE&utm_campaign=designshare&utm_medium=link&utm_source=editor)
