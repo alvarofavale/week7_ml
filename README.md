@@ -1,4 +1,4 @@
-# Week7: Machine Learning Project - Credit Score Classification
+# Week 7: Machine Learning Project - Credit Score Classification
 
 ## Table of Contents
 - [Description](#description)
@@ -12,40 +12,41 @@
   - [Gradient Boost Classifier](#gradient-boost-classifier)
   - [KNN Classifier](#knn-classifier)
 - [Conclusion](#conclusion)
+- [Repo Organization](#repo-organization)
 
 ### Description
 
-This machine learning project aims to classify customers' credit scores using various regression and classification techniques. The goal is to determine which model offers the best performance in terms of accuracy and efficiency for predicting customers' creditworthiness.
+This machine learning project aims to classify customers' credit scores using various regression and classification techniques. The goal is to identify which model offers the best performance in predicting customers' creditworthiness, evaluating both accuracy and efficiency.
 
 ### Data Set Research and Selection
 
-The dataset used for this project was selected from [Statso](https://statso.io/credit-score-classification-case-study/). This dataset includes diverse financial and demographic characteristics of customers, enabling the evaluation of their credit scores. The key features of the dataset include:
+The dataset used for this project was sourced from [Statso](https://statso.io/credit-score-classification-case-study/). It includes a wide range of financial and demographic characteristics of customers, which are useful for evaluating their credit scores. The key features include:
 
-- **Age**: The age of the individual
-- **Income**: The annual income of the individual
-- **Loan Amount**: The loan amount requested or borrowed
-- **Credit History**: The past history of the individual’s credit repayment (good or bad)
-- **Debt-to-Income Ratio**: The ratio of debt to income, an important factor in determining creditworthiness
-- **Employment Status**: Whether the individual is employed, self-employed, or unemployed
-- **Other Financial Metrics**: Includes assets, monthly expenses, and other related financial information
+- **Age**: Age of the individual
+- **Income**: Annual income of the individual
+- **Loan Amount**: Loan amount requested or borrowed
+- **Credit History**: The individual’s past credit repayment history (good or bad)
+- **Debt-to-Income Ratio**: Ratio of debt to income, an important factor in determining creditworthiness
+- **Employment Status**: Employment status (employed, self-employed, unemployed)
+- **Other Financial Metrics**: Includes assets, monthly expenses, and other financial information
 
 The objective is to classify individuals into categories of creditworthiness ("Good" or "Bad") based on these attributes.
 
 ### Insights
 
-- **Regressor vs Classifier**:
-  - **Classifier models are more efficient with less tuning** compared to regressor models.
-  - For binary classification tasks, classification models outperform regression models in terms of performance and simplicity.
+- **Regressor vs Classifier**:  
+  - Classifier models tend to be more efficient and require less tuning compared to regressor models.  
+  - For binary classification tasks, classification models generally outperform regression models in terms of accuracy and simplicity.
+  
+- **Model Optimization**:  
+  - Achieving optimal accuracy is often a process of "trial and error." Through iterative testing and refinement, models are improved over time, demanding both patience and perseverance to achieve the best configuration.
 
-- **Model Optimization**:
-  - Achieving the highest accuracy in predictive modeling is a journey characterized by "trial and error." With each iteration, models are refined and improved, demanding patience and perseverance to discover the ideal configuration.
-
-- **Model Selection**:
-  - For tasks with clearly defined categories, classifiers are your go-to option for efficient modeling with minimal tuning effort.
+- **Model Selection**:  
+  - For tasks with well-defined categories, classifier models are generally preferred due to their ability to provide efficient solutions with minimal tuning.
 
 ### Model Results
 
-The following models were tested to assess the performance in predicting credit scores:
+The following models were evaluated to assess their performance in predicting credit scores:
 
 #### Linear Regression
 - **MAE (Mean Absolute Error):** 0.57
@@ -116,30 +117,37 @@ The results indicate that **classification models**, particularly the **Random F
 #### Folder Structure
 
 - **data**
-  - `raw`: CSV file used  
-  - `encoding`: CSV file post mapping and categorical column encoding
+  - `raw`: Original CSV dataset  
+  - `encoding`: Encoded CSV file after mapping and handling categorical variables
 
 - **notebooks**
-  - Person name folders: Each team member proceeded to their own model tests
+  - Person-specific folders: Each team member tested their own models
     - `Tung`
     - `Aurelie`
     - `Ceci`
 
+#### Folder Structure for "Tung"
+
+- **jupyter notebooks**
+  - `KNN_notebook`: Rough and unfiltered KNN calculation for a first feel, achieving ~45% accuracy. Created a numerical dataframe and replaced target "credit_score" with numerical values.
+  - `decision_tree_notebook`: Limited the dataset to a random 1000 `client_ids` to improve performance. Normalized the train/test set and used `DecisionTreeRegressor` along with `graphviz` to visualize the tree.
+  - `decision_boundary_notebook`: Applied `StandardScaler` and `RandomForestClassifier` to the dataset. Used a scatterplot to visualize the decision boundary.
+
 #### Folder Structure for "Ceci"
 
 - **folders**  
-  - **figures**: Boxplots and violin plots made for testing features before encoding  
-  - **figuresb**: Boxplots and violin plots made for testing features after encoding  
-  - **figures_usable**: Useful figures for analysis  
-  - **figures_correlations**: Printing final correlation matrix from hyperparameter testing
+  - `figures`: Boxplots and violin plots for testing features before encoding  
+  - `figuresb`: Boxplots and violin plots for testing features after encoding  
+  - `figures_usable`: Useful figures for analysis  
+  - `figures_correlations`: Final correlation matrix from hyperparameter testing
 
 - **jupyter notebooks**
-  - `ml_firstKNN`: Initial KNN testing and presence of KNN Classifier and Regressor  
-  - `encoding`: Encoding of all categorical columns and printing the .csv file post mapping them correctly  
-  - `KNN_application_post_encoding`: Testing KNN again after encoding columns with updated .csv file  
-  - `KNN_feature_implementation`: Implementing features, testing KNN post encoding, determining splits to use, hyperparameter testing, implementation and fine-tuning, final tests  
+  - `ml_firstKNN`: Initial KNN testing, including both KNN Classifier and Regressor  
+  - `encoding`: Encoding categorical columns and saving the updated CSV file  
+  - `KNN_application_post_encoding`: Testing KNN after encoding columns with the updated dataset  
+  - `KNN_feature_implementation`: Feature implementation, hyperparameter testing, model fine-tuning, and final tests  
   - `linear_regression`: Attempted linear regression model  
-  - `full_KNN_implementation_simplified`: Defined functions for implementing features, hyperparameter testing, and confusion matrix printing all in one notebook for both of the kept split types: 70% train/30% test and 80% train/20% test
+  - `full_KNN_implementation_simplified`: Simplified implementation of KNN with functions for hyperparameter tuning and confusion matrix output, for both 70% train/30% test and 80% train/20% test splits
 
 ### Reference
 
