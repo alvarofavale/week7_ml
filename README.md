@@ -70,3 +70,6 @@ The dataset used for this project was selected from [Statso](https://statso.io/c
 
 The results indicate that classification models, particularly the **Random Forest Classifier**, outperform regression models in terms of accuracy for credit score classification. This confirms that for classification tasks with well-defined categories, classifier models are more suitable and require less tuning to achieve good performance.
 
+
+
+
